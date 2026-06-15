@@ -1,0 +1,10 @@
+streamlit
+streamlit-webrtc
+ultralytics
+opencv-python-headless
+av
+pandas
+numpy
+Pillow
+joblib
+scikit-learn
