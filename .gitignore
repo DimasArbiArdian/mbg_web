@@ -1,0 +1,11 @@
+venv/
+__pycache__/
+*.pyc
+.env
+.streamlit/secrets.toml
+
+outputs/*
+!outputs/.gitkeep
+
+.DS_Store
+Thumbs.db
