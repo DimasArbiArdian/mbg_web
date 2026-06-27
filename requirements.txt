@@ -7,4 +7,4 @@ pandas
 numpy
 Pillow
 joblib
-scikit-learn==1.6.1
+scikit-learn
