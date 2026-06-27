@@ -1,7 +1,7 @@
 streamlit
 streamlit-webrtc
-ultralytics
 opencv-python-headless
+ultralytics
 av
 pandas
 numpy
