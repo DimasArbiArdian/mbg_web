@@ -717,7 +717,7 @@ def render_upload_page(predictor):
             st.image(
                 image_rgb,
                 caption="Gambar Asli",
-                use_container_width=True
+                width="stretch"
             )
 
         with col_result:
@@ -725,7 +725,7 @@ def render_upload_page(predictor):
             st.image(
                 annotated_rgb,
                 caption="Hasil Deteksi YOLOv8",
-                use_container_width=True
+                width="stretch"
             )
 
         st.markdown("---")
@@ -747,7 +747,7 @@ def render_upload_page(predictor):
             section_title("📋 Total Nutrisi")
             st.dataframe(
                 rename_df_total(df_total),
-                use_container_width=True,
+                width="stretch",
                 hide_index=True
             )
 
@@ -759,7 +759,7 @@ def render_upload_page(predictor):
             else:
                 st.dataframe(
                     rename_df_item(df_item),
-                    use_container_width=True,
+                    width="stretch",
                     hide_index=True
                 )
 
@@ -767,7 +767,7 @@ def render_upload_page(predictor):
             section_title("📋 Data Total Nutrisi")
             st.dataframe(
                 rename_df_total(df_total),
-                use_container_width=True,
+                width="stretch",
                 hide_index=True
             )
 
@@ -790,7 +790,7 @@ def render_upload_page(predictor):
                     data=csv_item,
                     file_name=f"{base_filename}_detail_item.csv",
                     mime="text/csv",
-                    use_container_width=True
+                    width="stretch"
                 )
 
             with col_download2:
@@ -799,7 +799,7 @@ def render_upload_page(predictor):
                     data=csv_total,
                     file_name=f"{base_filename}_total_nutrisi.csv",
                     mime="text/csv",
-                    use_container_width=True
+                    width="stretch"
                 )
 
             with col_download3:
@@ -809,7 +809,7 @@ def render_upload_page(predictor):
                         data=image_bytes,
                         file_name=f"{base_filename}_hasil_deteksi.png",
                         mime="image/png",
-                        use_container_width=True
+                        width="stretch"
                     )
 
     except Exception as e:
@@ -943,7 +943,7 @@ def render_realtime_page(predictor, process_every_n_frames):
     with col_btn:
         capture_clicked = st.button(
             "📌 Ambil Hasil Frame Terakhir",
-            use_container_width=True
+            width="stretch"
         )
 
     with col_info:
@@ -976,14 +976,14 @@ def render_realtime_page(predictor, process_every_n_frames):
             section_title("🍽️ Detail Makanan Terdeteksi")
             st.dataframe(
                 rename_df_item(df_item),
-                use_container_width=True,
+                width="stretch",
                 hide_index=True
             )
 
             section_title("📋 Total Nutrisi")
             st.dataframe(
                 rename_df_total(df_total),
-                use_container_width=True,
+                width="stretch",
                 hide_index=True
             )
 
