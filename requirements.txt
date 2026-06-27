@@ -1,10 +1,10 @@
 streamlit
 streamlit-webrtc
-opencv-python-headless
 ultralytics
+opencv-python-headless
 av
 pandas
 numpy
 Pillow
 joblib
-scikit-learn
+scikit-learn==1.6.1
