@@ -1,4 +1,7 @@
 import os
+
+os.environ["YOLO_CONFIG_DIR"] = "/tmp/Ultralytics"
+
 import time
 import html
 import threading
